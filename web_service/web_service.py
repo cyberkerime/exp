@@ -28,7 +28,7 @@ HTML="""
         <input type="text" name="isim" placeholder="Adını yaz" required>
            <button type="submit">Gönder</button> 
     </form> 
-    <h3>Ziyaretçiler:</h3> 
+    <h3>Ziyaretciler:</h3> 
     <ul> 
         {% for ad in isimler %} 
             <li>{{ ad }}</li> 
