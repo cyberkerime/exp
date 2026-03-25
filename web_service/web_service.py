@@ -47,7 +47,7 @@ def index():
     return redirect("/")
 
 
-resp=requests.get(API_URL+"/ziyaretçiler")
+resp=requests.get(API_URL+"/ziyaretciler")
 isimler=resp.json()if resp.status_code == 200 else[]
 return render_template_string(HTML,isimler=isimler)
 
