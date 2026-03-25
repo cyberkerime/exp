@@ -43,7 +43,7 @@ HTML="""
 def index():
   if request.method == "POST":
     isim = request.from.get("isim")
-    requests.post(API_URL+ "/ziyaretçiler",json={"isim"})
+    requests.post(API_URL+ "/ziyaretciler",json={"isim"})
     return redirect("/")
 
 
